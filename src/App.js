@@ -12,7 +12,7 @@ const App = () => {
   const fetchSeats = async () => {
     try {
       setIsFetchingSeats(true);
-      const response = await axios.get('http://localhost:3001/api/seats');
+      const response = await axios.get('https://abc-zcox-tusharpaul592.vercel.app/api/seats');
       setSeats(response.data);
       setIsFetchingSeats(false);
     } catch (error) {
@@ -70,7 +70,7 @@ const App = () => {
         return;
       }
 
-      const response = await axios.post('http://localhost:3001/api/seats/book', { seatCount: requiredSeats });
+      const response = await axios.post('https://abc-zcox-tusharpaul592.vercel.app/api/seats/book', { seatCount: requiredSeats });
       console.log('response',response)
       const { seats: bookedSeats } = response.data;
       const seatNumbers = bookedSeats.map((seat) => seat.seatId);
