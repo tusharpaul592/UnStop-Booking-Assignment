@@ -13,7 +13,7 @@ app.use(express.json());
   
 //   app.use(cors(corsOptions));
   app.use(cors({
-    origin: 'https://your-vercel-app.vercel.app',
+    origin: 'https://abc-zcox-tusharpaul592.vercel.app/',
   }));
   
 // app.use(cors());
