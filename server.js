@@ -5,16 +5,14 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 app.use(express.json());
-// const corsOptions = {
-//     origin: 'http://localhost:3000', // Replace with the URL of your frontend
-//     methods: ['GET', 'POST'],
-//     optionsSuccessStatus: 200,
-//   };
+const corsOptions = {
+    origin: 'http://localhost:3000', // Replace with the URL of your frontend
+    methods: ['GET', 'POST'],
+    optionsSuccessStatus: 200,
+  };
   
-//   app.use(cors(corsOptions));
-  app.use(cors({
-    origin: 'https://abc-zcox-tusharpaul592.vercel.app/',
-  }));
+  app.use(cors(corsOptions));
+
   
 // app.use(cors());
 
