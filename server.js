@@ -12,6 +12,10 @@ const corsOptions = {
   };
   
   app.use(cors(corsOptions));
+  app.use(cors({
+    origin: 'https://your-vercel-app.vercel.app',
+  }));
+  
 // app.use(cors());
 
 // Available seats in the coach
