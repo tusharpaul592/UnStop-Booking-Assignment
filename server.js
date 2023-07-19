@@ -5,19 +5,6 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 app.use(express.json());
-// const corsOptions = {
-//     origin: 'http://localhost:3000', // Replace with the URL of your frontend
-//     methods: ['GET', 'POST'],
-//     optionsSuccessStatus: 200,
-//   };
-  
-//   app.use(cors(corsOptions));
-  // app.use((req, res, next) => {
-  //   res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3001');
-  //   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-  //   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-  //   next();
-  // });
 
   
 app.use(cors());
